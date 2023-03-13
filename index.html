@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+</head>
+<style>
+    form{
+        border: 2px solid black;
+        width: 400px;
+    }
+    #name{
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border-radius: 5px;
+         border: 3px solid black;
+         width: 300px;
+    }
+    #email{
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border-radius: 5px;
+         border: 3px solid black;
+         width: 300px;
+    }
+    #password{
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border-radius: 5px;
+         border: 3px solid black;
+         width: 300px;
+    }
+    #dob{
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border-radius: 5px;
+         border: 3px solid black;
+         width: 300px;
+    }
+    body{
+        background-image: url("new.jpeg");
+        background-size: cover;
+        color: aliceblue;
+       }
+    button{
+        padding: 20px;
+        width: 100px;
+        border-radius: 20px;
+       
+    }
+</style>
+
+<center><body  >
+    <div class="outer-box" style="width: 100vw;height: 200vh;">
+    <div class="inner-box" style="margin: 10 auto; border-radius: 15px;">
+    <header class="signup-header">
+    <h1 >REGISTRATION FORM</h1>
+    </header> 
+    <main class="signup-body">
+<form id="user-form">
+        <p>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"required placeholder="NAME">
+        </p>
+        <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required placeholder="EMAIL">
+        </p>
+        <p>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required placeholder="Password">
+        </p>
+        <p>
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required placeholder="DOB">
+        </p>
+        <p>
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+        <label for="acceptTerms">Accept Terms & Conditions</label>
+        </p>
+        <p>
+        <button type="submit">Submit</button>
+        <p>
+</form>
+</main> 
+</div>
+<div class="circle c1"></div>
+<div class="entries">
+    <h3 class="center"><span>ENTERIES</span></h3>
+    <div id="table"></div>
+</div>
+</div>
+<div id="user-entries"></div>
+<script src="index.js"></script>
+</body></center>
+</html>
